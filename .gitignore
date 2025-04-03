@@ -1,0 +1,13 @@
+
+# Ignore virtual env folders
+venv/
+venv_tf/
+__pycache__/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Large data files (if appropriate)
+*.csv
+*.data
+venv_tf/
