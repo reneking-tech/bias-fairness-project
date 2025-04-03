@@ -37,3 +37,4 @@ AI_Fairness_Project/
 =======
 # ai-fairness-project
 >>>>>>> 1ce6f47231b7e9d8bb40740aa19fda309acbdb99
+# bias-fairness-project
