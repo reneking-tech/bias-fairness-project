@@ -1,40 +1,66 @@
-<<<<<<< HEAD
 # AI Fairness Project
 
-## Overview
-This project demonstrates an end-to-end pipeline for addressing bias in AI systems using the UCI Adult dataset. The project covers:
-- Data cleaning and leakage removal
-- Bias detection using fairness metrics
-- Bias mitigation (using techniques such as reweighing and disparate impact remover)
-- Training models on both the original and mitigated datasets
-- Evaluating model performance and fairness
+![GitHub repo size](https://img.shields.io/github/repo-size/reneking-tech/bias-fairness-project)
+![Last commit](https://img.shields.io/github/last-commit/reneking-tech/bias-fairness-project)
+![License](https://img.shields.io/github/license/reneking-tech/bias-fairness-project)
 
-The goal is to build a fair and responsible AI system and showcase the trade-offs between predictive performance and fairness.
+## 🧠 Overview
+This project explores bias detection and mitigation techniques using the UCI Adult dataset. It walks through a full machine learning workflow—data preprocessing, fairness evaluation, model training, and bias mitigation—with a focus on ensuring fairness in predictive systems.
 
-## Folder Structure
+We use logistic regression models and the AIF360 toolkit to evaluate and mitigate biases, especially around the `sex` attribute.
 
+---
+
+## 📁 Project Structure
+```
 AI_Fairness_Project/
-├── data/
-│   ├── raw/                     # Original data files (e.g., adult.data, adult.test, adult.names)
-│   ├── processed/               # Intermediate processed data (optional)
-│   ├── train.csv                # Your original training data (or downloaded data)
-│   ├── train_cleaned.csv        # Data after cleaning and leakage removal
-│   └── weighted_train.csv       # Data after applying bias mitigation (e.g., reweighing)
-├── models/                      # Saved trained model files (e.g., pickle/joblib files)
-├── notebooks/                   # Jupyter notebooks for exploration, analysis, and visualization
-│   ├── data_exploration.ipynb
-│   ├── bias_detection.ipynb
-│   └── evaluation.ipynb
-├── src/                         # Python scripts (the "engine" of your project)
-│   ├── data_cleaning.py         # Loads raw data, removes leakage, and saves cleaned data
-│   ├── bias_detection.py        # Loads cleaned data, computes baseline fairness metrics
-│   ├── bias_mitigation.py       # Applies a bias mitigation technique (e.g., reweighing) and saves weighted data
-│   ├── train_model.py           # Loads weighted data, trains a model, and saves the trained model
-│   └── evaluation.py            # Evaluates model performance and fairness
-├── venv_tf/                     # Your Python virtual environment folder (using Python 3.9/3.10)
-├── README.md                    # Project description and instructions
-└── requirements.txt             # List of required Python packagesR
-=======
-# ai-fairness-project
->>>>>>> 1ce6f47231b7e9d8bb40740aa19fda309acbdb99
-# bias-fairness-project
+├── data/                     # Raw and cleaned datasets
+├── notebooks/               # Jupyter notebooks for each project stage
+├── src/                     # Python scripts for modular code
+├── models/                  # Trained model files
+├── requirements.txt         # Python dependencies
+├── .gitignore               # Ignored files and folders
+└── README.md                # Project documentation
+```
+
+---
+
+## ⚙️ Getting Started
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/reneking-tech/bias-fairness-project.git
+cd bias-fairness-project
+```
+
+2. **Set up the environment:**
+```bash
+python3 -m venv venv
+source venv/bin/activate       # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+3. **Run the Jupyter notebooks:**
+```bash
+jupyter notebook
+```
+
+Explore the notebooks in order:
+- `Data_Cleaning.ipynb`
+- `Bias_Detection.ipynb`
+- `Bias_Mitigation.ipynb`
+- `Train_Model.ipynb`
+- `Evaluation.ipynb`
+
+---
+
+## 📊 Key Features
+- 📉 Fairness metrics: Statistical Parity Difference, Disparate Impact
+- 🧪 Model training: Logistic regression
+- ⚖️ Bias mitigation: Reweighing algorithm (AIF360)
+- 📊 Visualizations of prediction outcomes by group
+
+---
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
