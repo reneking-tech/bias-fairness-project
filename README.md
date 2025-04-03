@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Fairness Project
 
 ## Overview
@@ -33,3 +34,6 @@ AI_Fairness_Project/
 ├── venv_tf/                     # Your Python virtual environment folder (using Python 3.9/3.10)
 ├── README.md                    # Project description and instructions
 └── requirements.txt             # List of required Python packagesR
+=======
+# ai-fairness-project
+>>>>>>> 1ce6f47231b7e9d8bb40740aa19fda309acbdb99
